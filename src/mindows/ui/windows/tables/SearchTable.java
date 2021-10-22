@@ -9,7 +9,7 @@ import mindustry.ui.*;
 
 public class SearchTable extends Table{
     public TextField search;
-    public Table all = new Table();
+    public Table all = new Table().top().left();
     public Cons2<Table, String> rebuild;
     float lastX, lastY, lastW, lastH;
 
@@ -47,7 +47,6 @@ public class SearchTable extends Table{
             Log.info("---");
         }
         all.clear();
-        all.top().left();
         rebuild.get(all, search.getText());
         if(parent != null){
             parent.moveBy(lastX, lastY);
