@@ -7,7 +7,6 @@ import mindustry.game.EventType.*;
 import mindustry.mod.*;
 
 public class Mindows extends Mod{
-
     public Mindows(){
         Events.on(ClientLoadEvent.class, h -> {
             new WindowFragment().build(Vars.ui.hudGroup);
