@@ -6,7 +6,7 @@ import mindustry.gen.Call;
 
 import java.util.regex.*;
 
-// interface class for scripts
+// container class for scripts
 public class Script {
     public static Pattern namePattern = Pattern.compile("(?<=//NAME \").*(?!\\n)");
     public static Pattern descPattern = Pattern.compile("(?<=//DESCRIPTION \").*(?!\\n)");
